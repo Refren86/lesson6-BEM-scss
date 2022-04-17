@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.nav {
+  display: flex;
+  column-gap: 35px;
+
+  a {
+    @include text($blue-color, 22px, 700, $font-lato);
+    text-decoration: none;
+    transition: color .5s;
+
+    &:hover {
+      color: $light-blue-color;
+    }
+
+    &:last-child {
+      padding-right: 25px;
+    }
+  }
+}

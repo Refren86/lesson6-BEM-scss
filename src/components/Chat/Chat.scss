@@ -1,0 +1,15 @@
+.chat__icon {
+  position: fixed;
+  bottom: 60px;
+  right: 31px;
+  z-index: 1;
+  cursor: pointer;
+
+  img {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

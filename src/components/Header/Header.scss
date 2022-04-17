@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+  }
+
+  &__logo {
+    @include text($white-color, 28px, 500, $font-montserrat);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-color;
+    height: 100%;
+    width: 192px;
+    cursor: default;
+  }
+  
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__language {
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-left: 1px solid $light-grey-color;
+    height: 90px;
+  
+    &__select {
+      @include text($light-grey-color, 22px, 500, $font-montserrat);
+      border: none;
+      background-color: $pale-gray-color;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

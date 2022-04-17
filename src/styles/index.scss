@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@400;500&family=PT+Serif:wght@700&display=swap');
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-montserrat;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $pale-gray-color;
+}

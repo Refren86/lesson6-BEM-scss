@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.copyright {
+  @include text($white-color, 14px, 700, $font-lato);
+  background-color: $abyss-blue-color;
+  padding: 22px 0;
+  text-align: center;
+}
